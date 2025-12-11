@@ -5,23 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testimonial Card</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <main>
-    <section class="testimoinals">
+    <section class="testimonials">
+
+
       <article class="testimonial-card">
-        <div class="words">
-          <p class="testimony">
-            I have been solving all the project ideas on roadmap.sh and I am suprised how far I have come from where I
-            started.
-          </p>
-          <p>
-            Highly recommended!
-          </p>
+        <div class="words-with-pointer">
+          <div class="words">
+            <p class="testimony">
+              I have been solving all the project ideas on roadmap.sh and I am suprised how far I have come from where
+              I
+              started.
+            </p>
+            <p>
+              Highly recommended!
+            </p>
+          </div>
+          <div class="triangle-pointer"></div>
         </div>
+
         <div class="profile">
-          <div class="image"></div>
+          <div class="image-container">
+            <img class="pfp" src="images/headshot-1.jpg" alt="">
+          </div>
           <div class="profile-title">
             <p class="name">
               Artem Jones
@@ -33,15 +45,18 @@
         </div>
       </article>
 
-      <article class="testimonial-card">
+      <article class="testimonial-card testimonial-card-2">
         <div>
-          <p class="testimony">
-            Since starting my career in 2021, I have only followed one resource, roadmap.sh, it truly helped me go from
+          <p class="testimony words words-2">
+            Since starting my career in 2021, I have only followed one resource, roadmap.sh, it truly helped me go
+            from
             0 to having a job and changing the financial trajectory of my family.
           </p>
         </div>
-        <div class="profile">
-          <div class="image"></div>
+        <div class="profile profile-2">
+          <div class="image-container">
+            <img class="pfp pfp-2" src="images/headshot-2.jpg" alt="">
+          </div>
           <div class="profile-title">
             <p class="name">
               Artem Jones
@@ -53,33 +68,68 @@
         </div>
       </article>
 
-      <article class="testimonial-card">
-        <div class="image"></div>
-        <div>
-          <div class="star-rating"></div>
-          <p class="name">
-            Artem Jones
+
+      <article class="testimonial-card-big grid-col-span-2">
+        <div class="image-wrapper desktop">
+          <img src="images/headshot-big.jpg" width="4000" alt="" class="pfp-big">
+        </div>
+
+        <div class="profile-n-rating">
+          <div class="star-rating desktop">
+            <img class="star-rating" src="images/star-rating.svg" alt="">
+          </div>
+          <p class="name desktop">
+            Jackie Mackle
           </p>
-          <p class="role">
-            Junior Frontend Developer
+          <p class="role desktop">
+            Engineering Manager
           </p>
 
           <p class="testimony">
             I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to skill
             up and grow in your career.
           </p>
+
+          <div class="profile mobile">
+            <div class="image-container">
+              <img src="images/headshot-big.jpg" width="4000" alt="" class="pfp pfp-mobile">
+            </div>
+
+            <div class="name-n-role">
+              <p class="name">
+                Jackie Mackle
+              </p>
+              <p class="role">
+                Engineering Manager
+              </p>
+            </div>
+
+          </div>
         </div>
       </article>
 
-      <article class="concluding-testimonials">
-        <p>
+      <article class="concluding-testimonials grid-col-span-2">
+        <p class="testimonial-text">
           roadmap.sh is an incredible resource. I was fortunate to discover it during my university days in 2018. Back
           then, it was a single repository with three images. It's amazing to see how much impact it has had on millons
           of lives since then.
         </p>
 
         <div class="toggle-profiles">
-          <div class="images"></div>
+
+          <div class="images">
+            <img class="left-toggle" src="images/left-chevron.png" alt="">
+            <div class="image-holder">
+              <img class="sliding-profile" src="images/headhot-4.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img class="sliding-profile selected" src="images/headshot-2.jpg" alt="">
+            </div>
+            <div class="image-holder">
+              <img class="sliding-profile" src="images/headshot-3.jpg" alt="">
+            </div>
+            <img class="right-toggle" src="images/left-chevron.png" alt="">
+          </div>
           <p class="name">
             Artem Jones
           </p>
